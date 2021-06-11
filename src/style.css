@@ -29,7 +29,7 @@ body {
     overflow-x       : hidden !important;
     z-index          : 0;
     margin           : 0;
-    font-family      : var(--font-text);
+    font-family      : var(--font-title);
     background       : #050100;
     color            : #FFFCFE;
     animation        : transitionPage 4s;
@@ -63,6 +63,7 @@ a {
 }
 
 p {
+    font-family: var(--font-title);
     font-size    : 25px;
     margin-bottom: 2rem;
     line-height  : 2.5rem;
@@ -174,7 +175,7 @@ h1#title {
 .btn {
     width             : 14rem;
     height            : 2.5rem;
-    font-family       : var(--font-text);
+    font-family       : var(--font-title);
     transition        : ease-in-out .5s;
     -webkit-transition: ease-in-out .5s;
     -moz-transition   : ease-in-out .5s;
@@ -235,6 +236,7 @@ section.history-section {
 }
 
 .title {
+    font-family: var(--font-title);
     font-size    : 12vw;
     margin-bottom: 1.5rem;
     color        : var(--color-secondary);
@@ -242,6 +244,7 @@ section.history-section {
 
 .subtitle {
     font-size: 3vw;
+    font-family: var(--font-title);
 }
 
 .text {
@@ -518,15 +521,16 @@ section.bibliography-section {
     display    : flex;
     flex-flow  : column wrap;
     align-items: center;
-}
-
-.footer-info-social {
-    margin: 4rem 0;
+    text-align: center;
 }
 
 .footer-info-about h4 {
     font-size     : 30px;
     padding-bottom: 2rem;
+}
+
+.footer-info-social {
+    margin: 4rem 0;
 }
 
 .footer-social ul {
@@ -609,7 +613,7 @@ section.bibliography-section {
     }
 
     #representation-images figure {
-        width: 60vw;
+        width: 80vw;
     }
 
     #representation-images figure.img-1 {
