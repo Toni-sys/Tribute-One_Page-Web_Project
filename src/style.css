@@ -37,7 +37,7 @@ body {
 }
 
 section {
-    overflow-x: hidden;
+    overflow: hidden;
     max-width : 1980px;
     max-height: 100%;
 }
@@ -227,7 +227,7 @@ main {
 
 section.history-section {
     margin-bottom: 10rem;
-    overflow-y: hidden;
+
 }
 
 .title-wrap {
