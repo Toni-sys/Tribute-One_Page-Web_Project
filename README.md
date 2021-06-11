@@ -2,8 +2,8 @@
 
 Web Development | One page | Tribute to Tzilacatzin.
 
-Description: A tribute page to the Mexica Warrior "Tzilacatzin"
+Description: A tribute page to the Mexica Warrior "Tzilacatzin".
 
-About the project: Smoke Effects using Vanilla Js, animations with CSS Keyframes, full responsive. 
+About the project: Smoke Effect on the text, Vanilla Js, Flexbox,animations with CSS Keyframes, full responsive. 
 
 Author: Tony-sys
