@@ -227,6 +227,7 @@ main {
 
 section.history-section {
     margin-bottom: 10rem;
+    overflow-y: hidden;
 }
 
 .title-wrap {
