@@ -1,4 +1,4 @@
-# Tribute-Page
+# Tribute-One_Page-Web_Project
 
 Web Development | One page | Tribute to Tzilacatzin.
 
