@@ -26,18 +26,18 @@ html {
 }
 
 body {
-    overflow-x: hidden !important;
-    z-index: 0;
-    margin: 0;
-    font-family: var(--font-text);
-    background: #050100;
-    color: #FFFCFE;
-    animation: transitionPage 4s;
+    overflow-x       : hidden !important;
+    z-index          : 0;
+    margin           : 0;
+    font-family      : var(--font-text);
+    background       : #050100;
+    color            : #FFFCFE;
+    animation        : transitionPage 4s;
     -webkit-animation: transitionPage 4s;
 }
 
 section {
-    overflow  : hidden;
+    overflow-x: hidden;
     max-width : 1980px;
     max-height: 100%;
 }
@@ -55,7 +55,7 @@ audio:not([controls]) {
 img {
     width    : 100%;
     max-width: 100%;
-    display  : block;
+    height   : auto;
 }
 
 a {
@@ -69,9 +69,9 @@ p {
 }
 
 header {
-    width : 100%;
-    height: 100vh;
-    background: linear-gradient(to bottom,  transparent 80%, #000 100%);
+    width     : 100%;
+    height    : 100vh;
+    background: linear-gradient(to bottom, transparent 80%, #000 100%);
 }
 
 
@@ -106,12 +106,11 @@ header {
 =============================================*/
 
 .hero-images {
-    position  : relative;
-    top       : 0;
-    left      : 0;
-    height    : 100vh;
-    width     : 100%;
-    /* background: #977363; */
+    position: relative;
+    top     : 0;
+    left    : 0;
+    height  : 100vh;
+    width   : 100%;
 }
 
 .container-parallax img {
@@ -121,12 +120,13 @@ header {
     width     : 100%;
     height    : 100%;
     object-fit: cover;
-    
+
 }
 
 .container-parallax img.hero-image-back {
-    position: fixed;
-    z-index: -1;
+    position  : fixed;
+    overflow-x: hidden;
+    z-index   : -1;
 }
 
 .container-parallax img.hero-image-front {
@@ -150,7 +150,7 @@ header {
 
 h1#title {
     font-family   : var(--font-title);
-    font-size     : 90px;
+    font-size     : 5vw;
     text-transform: uppercase;
     color         : rgba(0, 0, 0, 0.859);
 }
@@ -159,12 +159,12 @@ h1#title {
     margin-bottom: 5rem;
     font-weight  : bolder;
     text-shadow  : 0 0 10px rgba(246, 193, 111, 0.771);
-    
+
 }
 
 .hero-subtitle {
     margin-bottom: 5rem;
-    font-size    : 55px;
+    font-size    : 3vw;
     color        : rgba(0, 0, 0, 0.868);
     font-family  : var(--font-title);
     font-weight  : 700;
@@ -219,14 +219,14 @@ main {
 }
 
 .history-section {
+    padding-top: 10rem;
     width      : 100%;
     display    : flex;
     align-items: center;
-
 }
 
 section.history-section {
-    padding-bottom: 10rem;
+    margin-bottom: 10rem;
 }
 
 .title-wrap {
@@ -234,13 +234,13 @@ section.history-section {
 }
 
 .title {
-    font-size    : 180px;
+    font-size    : 12vw;
     margin-bottom: 1.5rem;
     color        : var(--color-secondary);
 }
 
 .subtitle {
-    font-size: 50px;
+    font-size: 3vw;
 }
 
 .text {
@@ -253,22 +253,23 @@ section.history-section {
 }
 
 .separator {
-    width          : 600px;
     margin-bottom  : 2rem;
     display        : flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items    : center;
     align-content  : center;
+
 }
 
 .separator .line {
-    width           : 240px;
+    width           : 13vw;
     height          : 5px;
     background-color: var(--color-secondary);
 }
 
 .separator .feather {
-    color: var(--color-secondary);
+    color  : var(--color-secondary);
+    padding: 0 2rem;
 }
 
 .separator .line-left {
@@ -288,7 +289,7 @@ section.history-section {
 =             START SECTION | QUOTES           =
 =============================================*/
 section.quotes-section {
-    padding-bottom: 10rem;
+    margin-bottom: 10rem;
 }
 
 /*=====  END OF SECTION QUOTES  ======*/
@@ -298,12 +299,13 @@ section.quotes-section {
 =============================================*/
 section.representation-section {
     margin-bottom: 18rem;
+    overflow-x   : hidden;
 }
 
 #representation-images {
-    display    : flex;
-    flex-flow  : column wrap;
-    align-items: center;
+    display  : flex;
+    flex-flow: column wrap;
+    padding  : 0 10rem;
 }
 
 #representation-images figure {
@@ -319,19 +321,25 @@ section.representation-section {
     -ms-transition       : 900ms ease-in-out;
     -o-transition        : 900ms ease-in-out;
     margin-bottom        : 2.5rem;
-    border               : 2px#B17519 solid;
-    border-radius        : 30px;
-    -webkit-border-radius: 30px;
-    -moz-border-radius   : 30px;
-    -ms-border-radius    : 30px;
-    -o-border-radius     : 30px;
+    /*border             : 2px#B17519 solid;
+    */
+    border-radius        : 31px;
+    -webkit-border-radius: 31px;
+    -moz-border-radius   : 31px;
+    -ms-border-radius    : 31px;
+    -o-border-radius     : 31px;
     overflow             : hidden;
+    box-shadow           : 0 0 20px 15px rgba(0, 0, 0, 0.535);
+}
+
+#representation-images figure img {
+    height: 101%;
 }
 
 #representation-images figure.img-1 {
     position: relative;
     top     : 0;
-    left    : -20%;
+    left    : 0;
 }
 
 #representation-images figure.img-2 {
@@ -343,7 +351,7 @@ section.representation-section {
 #representation-images figure.img-3 {
     position: relative;
     top     : 0;
-    left    : -20%;
+    left    : 0;
 }
 
 #representation-images figure.img-4 {
@@ -362,7 +370,7 @@ section.representation-section {
     top                  : 0;
     left                 : 0;
     width                : 100%;
-    height               : 100%;
+    height               : 99.5%;
     background           : rgba(0, 0, 0, 0.791);
     z-index              : 1;
     transform            : scaleX(0);
@@ -382,6 +390,7 @@ section.representation-section {
     -ms-border-radius    : 30px;
     -o-border-radius     : 30px;
     overflow             : hidden;
+    border               : #000;
 }
 
 #representation-images figure:hover::after {
@@ -395,9 +404,10 @@ section.representation-section {
 }
 
 #representation-images img {
-    min-width            : 300px;
-    max-width            : 800px;
-    border               : 2px#B17519 solid;
+    /* min-width            : 300px;
+    max-width            : 800px; */
+    /* border               : 2px#B17519 solid; */
+    height               : 100%;
     z-index              : 1;
     border-radius        : 30px;
     -webkit-border-radius: 30px;
@@ -431,6 +441,7 @@ section.representation-section {
 section.bibliography-section {
     margin-bottom : 20rem;
     padding-bottom: 2rem;
+    overflow      : hidden;
 }
 
 .bibliography-information {
@@ -463,7 +474,7 @@ section.bibliography-section {
 }
 
 .btn.btn-top:hover {
-    color           : var(--color-tertiary);
+    color           : var(--color-secondary);
     background-color: var(--color-tertiary);
     border-color    : var(--color-tertiary);
     cursor          : pointer;
@@ -495,15 +506,16 @@ section.bibliography-section {
 =       START SECTION | FOOTER           =
 =============================================*/
 .footer-section {
-    display: flex;
+    display    : flex;
     align-items: center;
-    background: rgba(0, 0, 0, 0.4);
-    height: 100vh;
+    background : rgba(0, 0, 0, 0.4);
+    height     : 100vh;
+    overflow   : hidden;
 }
 
 .footer-info-about {
-    display: flex;
-    flex-flow: column wrap;
+    display    : flex;
+    flex-flow  : column wrap;
     align-items: center;
 }
 
@@ -520,8 +532,8 @@ section.bibliography-section {
     list-style-type: none;
     display        : flex;
     flex-flow      : row wrap;
-    justify-content: space-between;
-    margin         : 0 30rem;
+    justify-content: space-evenly;
+
 }
 
 .footer-social ul li {
@@ -571,14 +583,114 @@ section.bibliography-section {
 
 @keyframes transitionPage {
     from {
-        opacity: 0;
+        opacity   : 0;
         overflow-x: hidden;
     }
 
     to {
-        opacity: 1;
+        opacity   : 1;
         overflow-x: hidden;
     }
 }
 
 /*=====  END OF SECTION KEYFRAMES  ======*/
+
+/*=============================================
+=             START SECTION | MEDIAQUERY           =
+=============================================*/
+
+@media only screen and (max-width: 1400px) {
+
+    /*-- START SUB-SECTION | REPRESENTATION --*/
+    #representation-images {
+        align-items: center;
+        padding    : 0 0;
+    }
+
+    #representation-images figure {
+        width: 60vw;
+    }
+
+    #representation-images figure.img-1 {
+
+        left: 0;
+    }
+
+    #representation-images figure.img-2 {
+
+        right: 0;
+    }
+
+    #representation-images figure.img-3 {
+
+        left: 0;
+    }
+
+    #representation-images figure.img-4 {
+
+        right: 0;
+    }
+}
+
+
+
+
+@media only screen and (max-width : 768px) {
+
+
+
+    /*-- START SUB-SECTION | GLOBAL --*/
+    p {
+        font-size: 20px;
+    }
+    
+    /*-- START SUB-SECTION | HERO --*/
+    h1#title {
+        font-size: 12vw;
+    }
+
+    .hero-subtitle {
+        font-size    : 8vw;
+    }
+
+    /*-- START SUB-SECTION | HISTORY --*/
+    .title {
+        font-size: 12vw;
+    }
+
+    .subtitle {
+        font-size: 5vw;
+    }
+
+    .separator {
+        margin-bottom  : 2rem;
+        display        : flex;
+        justify-content: flex-start;
+        align-items    : center;
+        align-content  : center;
+    }
+
+    .separator .line {
+        width           : 17vw;
+        height          : 4px;
+        background-color: var(--color-secondary);
+    }
+
+    .separator .feather {
+        color  : var(--color-secondary);
+        padding: 0 2rem;
+    }
+
+    .separator .line-left {
+        animation        : line-left;
+        -webkit-animation: line-left;
+    }
+
+    /*-- START SUB-SECTION | BIBLIOGRAPHY --*/
+    .bibliography-list .list-container li{
+        font-size: 20px;
+    }
+}
+
+
+/*=====  END OF SECTION MEDIAQUERY  ======*/
