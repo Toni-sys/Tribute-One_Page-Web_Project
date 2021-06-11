@@ -474,9 +474,9 @@ section.bibliography-section {
 /*=============================================
 =       START SECTION | SEPARATOR           =
 =============================================*/
-section.separator-section {
+/* section.separator-section {
     margin-bottom: 22rem;
-}
+} */
 
 #image {
     margin-bottom: 1rem;
@@ -495,13 +495,15 @@ section.separator-section {
 =       START SECTION | FOOTER           =
 =============================================*/
 .footer-section {
-    margin-bottom: 22rem;
+    display: flex;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.4);
+    height: 100vh;
 }
 
-
 .footer-info-about {
-    display    : flex;
-    flex-flow  : column wrap;
+    display: flex;
+    flex-flow: column wrap;
     align-items: center;
 }
 
@@ -528,7 +530,7 @@ section.separator-section {
 }
 
 .footer-social i {
-    color: var(--color-secondary);
+    color: #FFF;
 }
 
 /*=====  END OF SECTION FOOTER  ======*/
